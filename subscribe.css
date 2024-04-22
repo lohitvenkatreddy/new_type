@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex; /* Make the body a flex container */
+    min-height: 100vh; /* Set minimum viewport height for full-page rendering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Distribute vertical space between header, main, and footer */
+}
+
+header {
+    background-color: #7f1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Stretch header to full width */
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    display: flex; /* Make main section a flex container */
+    flex-direction: column; /* Stack elements vertically within main section */
+    align-items: center; /* Center elements horizontally within main section */
+    width: 100%; /* Stretch main section to full width */
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap; /* Allow plans to wrap onto multiple lines if needed */
+    justify-content: space-between; /* Distribute plans horizontally */
+    width: 80%; /* Limit plans section width to 80% to avoid overflow on smaller screens */
+    margin: 0 auto; /* Center plans section horizontally */
+}
+
+.plan {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Set individual plan width */
+    text-align: center;
+    border-radius: 5px;
+}
+
+.plan h3,
+.plan p {
+    margin-bottom: 10px;
+}
+
+.plan button {
+    background-color: #7f1c1c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.benefits {
+    margin-top: 40px;
+    text-align: center; /* Center benefits text */
+    width: 80%; /* Limit benefits section width to 80% */
+    margin: 0 auto; /* Center benefits section horizontally */
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #7f1c1c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Stretch footer to full width */
+}
